@@ -1,0 +1,221 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+.video{
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+}
+
+#itt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white ;
+    background-color: black;
+    margin-top: 800px;
+    /* margin-top: 200px; */
+}
+
+#relit{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    height: 100%;
+}
+
+#remit{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 100%;
+}
+
+
+#poppe ,#cringe{
+    position: relative;
+}
+
+#poppe span ,#cringe span{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+#poper ,#frine{
+
+width: fit-content;
+height: fit-content;
+position: absolute;
+background-color: white;
+display: flex;
+top: 60px;
+border-radius: 3px;
+align-items: start;
+justify-content: center;
+display: none;
+padding-left: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+}
+#poper button:hover , #frine button:hover {
+color: #599aef;
+}
+
+
+#poppe:hover #poper , #cringe:hover #frine{
+display: flex;
+
+}
+
+#crane , #grape , #maddo , #java , #mava , #rava , #cava , #nava ,#grope , #frane ,#gapa , #hapa ,#mara ,#wava ,#lava ,#liva , #nova ,#rova ,#mova ,#lova , #isova{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: start;
+}
+
+#grap , #maddona{
+width: fit-content;
+height: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+border-left: 1px solid gray;
+
+
+}
+
+#crane {
+/* position: relative; */
+width: 140px;
+height: 150px;
+}
+
+#frane{
+width: 200px;
+height: 110px;
+}
+
+#grape , #grope{
+width: 300px;
+height: fit-content;
+background-color: white;
+display: none;
+}
+
+#grope{
+width: 330px;
+}
+
+#maddo , #java , #mava , #rava , #cava ,#nava ,#gapa ,#hapa , #mara , #wava ,#lava ,#liva , #nova ,#rova ,#mova , #lova , #isova{ 
+width: 300px;
+height: fit-content;
+background-color: white;
+display: none;
+
+}
+#mava{
+width: 320px;
+}
+#rava{
+width: 370px;
+}
+
+#mova{
+width: 320px;
+}
+
+#crane button ,#frane button{
+border: none;
+background-color: rgba(0, 255, 255, 0);
+line-height: 30px;
+width:100%;
+height: fit-content;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 16px;
+
+}
+
+
+
+#grape button , #maddo button , #java button , #mava button , #rava button , #cava button ,#nava button ,#grope button ,#gapa button ,#hapa button ,#mara button , #wava button , #lava button ,#liva button , #nova button ,#rova button ,#mova button ,#lova button ,#isova button{
+border: none;
+background-color: rgba(0, 255, 255, 0);
+line-height: 30px;
+width: 95%;
+
+height: fit-content;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 16px;
+
+}
+
+#revel{
+position: relative;
+height: 60px;
+background-color: rgba(165, 42, 42, 0);
+display: flex;
+align-items: center;
+}
+#revel:hover #ngannou{
+display: block;
+}
+
+#ngannou p:hover{
+color: #599aef;
+}
+
+#ngannou{
+width: 230px;
+top: 60px;
+display: none;
+height: fit-content;
+position: absolute;
+background-color: white;
+color: black;
+padding-left: 10px;
+box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.215);
+line-height: 30px;
+}
+
+
+
+
+
+/* media queries */
+@media (max-width:1190px) {
+#relit{
+width: 100%;
+}
+
+
+}
+@media (max-width:805px) {
+#ngannou{
+width: 220px;
+left: -160px;
+}
+
+}
+
+@media (max-width:505px) {
+
+#remit span{
+font-size: 12px;
+}
+#ngannou{
+width: 200px;
+}
+
+
+}

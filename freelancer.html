@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #itt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white ;
+            background-color: black;
+        }
+
+        #relit{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 80%;
+            height: 100%;
+        }
+
+        #remit{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 600px;
+            height: 100%;
+        }
+
+     
+        #poppe ,#cringe{
+            position: relative;
+        }
+
+        #poppe span ,#cringe span{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 255, 255, 0);
+        }
+
+     #poper ,#frine{
+        
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    top: 60px;
+    border-radius: 3px;
+    align-items: start;
+    justify-content: center;
+      display: none;
+      padding-left: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+    }
+    #poper button:hover , #frine button:hover {
+        color: #599aef;
+    }
+  
+
+    #poppe:hover #poper , #cringe:hover #frine{
+        display: flex;
+
+    }
+     
+     #crane , #grape , #maddo , #java , #mava , #rava , #cava , #nava ,#grope , #frane ,#gapa , #hapa ,#mara ,#wava ,#lava ,#liva , #nova ,#rova ,#mova ,#lova , #isova{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+     }
+
+     #grap , #maddona{
+        width: fit-content;
+        height: fit-content;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-left: 1px solid gray;
+   
+   
+     }
+
+     #crane {
+        /* position: relative; */
+        width: 140px;
+        height: 150px;
+     }
+
+     #frane{
+        width: 200px;
+        height: 110px;
+     }
+
+      #grape , #grope{
+        width: 300px;
+        height: fit-content;
+        background-color: white;
+        display: none;
+      }
+
+      #grope{
+        width: 330px;
+      }
+
+      #maddo , #java , #mava , #rava , #cava ,#nava ,#gapa ,#hapa , #mara , #wava ,#lava ,#liva , #nova ,#rova ,#mova , #lova , #isova{ 
+        width: 300px;
+        height: fit-content;
+        background-color: white;
+        display: none;
+       
+      }
+      #mava{
+        width: 320px;
+      }
+      #rava{
+        width: 370px;
+      }
+
+      #mova{
+        width: 320px;
+      }
+
+     #crane button ,#frane button{
+        border: none;
+        background-color: rgba(0, 255, 255, 0);
+        line-height: 30px;
+        width:100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+    
+     }
+
+  
+
+  #grape button , #maddo button , #java button , #mava button , #rava button , #cava button ,#nava button ,#grope button ,#gapa button ,#hapa button ,#mara button , #wava button , #lava button ,#liva button , #nova button ,#rova button ,#mova button ,#lova button ,#isova button{
+    border: none;
+        background-color: rgba(0, 255, 255, 0);
+    line-height: 30px;
+    width: 95%;
+   
+    height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+
+  }
+
+  #revel{
+    position: relative;
+    height: 60px;
+    background-color: rgba(165, 42, 42, 0);
+    display: flex;
+    align-items: center;
+  }
+#revel:hover #ngannou{
+    display: block;
+}
+
+#ngannou p:hover{
+    color: #599aef;
+}
+
+  #ngannou{
+    width: 230px;
+    top: 60px;
+    display: none;
+    height: fit-content;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.215);
+    line-height: 30px;
+  }
+
+ 
+
+
+
+  /* media queries */
+  @media (max-width:1190px) {
+    #relit{
+        width: 100%;
+    }
+  
+
+  }
+  @media (max-width:805px) {
+    #ngannou{
+    width: 220px;
+    left: -160px;
+  }
+
+  }
+
+  @media (max-width:505px) {
+  
+    #remit span{
+    font-size: 12px;
+  }
+  #ngannou{
+    width: 200px;
+  }
+
+
+  }
+
+
+    </style>
+</head>
+<body>
+    <div id="itt">
+        <div id="relit">
+            <div id="remit">
+                <div id="poppe">
+                <span> Find jobs </span>
+                <div id="poper">
+                    <div id="crane">
+                    <button id="r1"> By skill <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon>   </button>
+                    <button id="r2">  By language <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button>
+                    <button> Featured jobs</button>
+                    <button> Find contests</button>
+                </div>
+                  <div id="grap">
+                <div id="grape">
+                   <button id="s1">Find Graphic Design Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                   <button id="s2">   Find Website Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                   <button id="s3">  Find Mobile App Development Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                   <button id="s4">  Find Software Development Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                   <button id="s5"> Find Internet Marketing Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                   <button>Find Data Entry Jobs</button> 
+                   <button> Find SEO Jobs</button> 
+                   <button id="s6">   Find Writing Jobs <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button> 
+                   <button> Find Legal Jobs</button> 
+                   <button>Find Finance Jobs</button> 
+                   <button>  Find Manufacturing Jobs</button> 
+                   <button>Find Logistics Jobs</button>
+                </div>
+                <div id="grope">
+                    <button>  Find Freelance Jobs In English</button>
+                    <button>  Find Freelance Jobs In Spanish</button>
+                    <button> Find Freelance Jobs In Portugese</button>
+                    <button> Find Freelance Jobs In French</button>
+                    <button> Find Freelance Jobs In German</button>
+                    <button>  Find Freelancer Jobs in Other Languages</button>
+                  
+
+
+
+
+
+
+                </div>
+            </div>
+
+                 <div id="maddona">
+                <div id="maddo"> 
+                    <button> Find Logo Design Jobs</button>
+                    <button> Find Web Design Jobs</button>
+                    <button> Find Banner Design Jobs</button>
+                    <button> Find 3D Modeling Jobs</button>
+                    <button>Find Photoshop Jobs</button>
+                    <button>Find Illustration Jobs</button>
+                    <button>Find 3D Animation Jobs</button>
+                    <button>Find 2D Animation Jobs</button>
+                    <button> Find Other Graphic Design Jobs</button>
+                </div>
+
+                <div id="java">
+                   <button>Find PHP Jobs</button> 
+                   <button>Find Javascript Jobs</button> 
+                   <button>Find CSS Jobs</button> 
+                   <button>Find Amazon Web Services Jobs</button> 
+                   <button>Find HTML5 Jobs</button> 
+                   <button>Find Wordpress Jobs</button> 
+                   <button>Find Squarespace Jobs</button> 
+                   <button>Find Magento Jobs</button> 
+                   <button>Find Database Development Jobs</button> 
+                   <button> Find Other Website Jobs</button> 
+                </div>
+                <div id="mava">
+                    <button> Find iPhone App Jobs</button>
+                    <button> Find Android App Jobs</button>
+                    <button> Find Flutter Jobs</button>
+                    <button>Find Xamarin Jobs</button>
+                    <button> Find PhoneGap Jobs</button>
+                    <button> Find Other Mobile App Development Jobs</button>
+                </div>
+
+                <div id="rava">
+                    <button>Find Linux Jobs</button>
+                    <button> Find C++ Software Development Jobs </button>
+                    <button> Find C# Software Development Jobs   </button>
+                    <button> Find Objective C Software Development Jobs </button>
+                    <button>Find Ruby On Rails Software Development Jobs</button>
+                    <button>Find Python Software Development Jobs</button>
+                    <button> Find Java Software Development Jobs </button>
+                    <button> Find Other Software Development Jobs</button>
+                </div>
+                <div id="cava">
+                    <button>Find Social Media Marketing Jobs</button>
+                    <button> Find Other Internet Marketing Jobs </button>
+                </div>
+                <div id="nava">
+                    <button> Find Copywriting Jobs</button>
+                    <button> Find Ghostwriting Jobs</button>
+                    <button> Find Article Writing Jobs</button>
+                    <button>Find Other Writing Jobs</button>
+                </div>
+
+            </div>
+
+
+               
+
+        
+                </div>
+            </div>
+            <div id="cringe">
+                <span> Hire Freelancers</span>
+                <div id="frine">
+                    <div id="frane">
+                        <button id="r3"> By skills <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon>   </button>
+                        <button id="r4">  By location <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button>
+                        <button> Skills Cartegories</button>
+                    </div>
+                    <div id="grap"> 
+                        <div id="gapa">
+                      <button id="g1"> Hire Graphic Designers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button> 
+                      <button>Hire Logo Designers </button>
+                      <button id="g2">Hire 3D Graphic Designers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                      <button id="g3" > Hire Web Designers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button>
+                      <button id="g4"> Hire Web Developers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                      <button id="g5"> Hire Mobile App Developers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                      <button id="g6"> Hire Writers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon> </button>
+                      <button id="g7">Hire Internet Marketing Specialists <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                      <button> Hire SEO Specialists</button>
+                      <button> Hire Data Entry Clerks</button>
+                      <button>Hire Virtual Assistants </button>
+                      <button id="g8">Hire Software Developers <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                      <button id="g9">  Hire Financial Experts <iconify-icon icon="iconamoon:arrow-right-2-duotone" style="color: black;" width="24"></iconify-icon></button>
+                      <button>  Hire Translators</button>
+                      <button>Hire Lawyers </button>
+                      <button>Hire Manufacturers </button>
+                      <button> Hire Logistics Experts </button>
+                   </div>
+                   <div id="hapa">
+                    <button> Hire Freelancers in the United States</button>
+                    <button> Hire Freelancers in the United Kingdom</button>
+                    <button> Hire Freelancers in Canada </button>
+                    <button> Hire Freelancers in India </button>
+                    <button> Hire Freelancers in Australia</button>
+                    <button> Hire Freelancers in Pakistan </button>
+                    <button> Hire Freelancers in Bangladesh</button>
+                    <button> Hire Freelancers in Indonesia </button>
+                    <button> Hire Freelancers in Brazil </button>
+                    <button> Hire Freelancers in China </button>
+                    <button> Hire Freelancers in Turkey </button>
+                    <button> Hire Freelancers in the Philippines </button>
+                   </div>
+
+
+
+                    </div>
+                    <div id="maddona">
+                        <div id="mara">
+                            <button>  Hire Photoshop Designers</button>
+                            <button> Hire Illustrators</button>
+                            <button> Hire Motion Graphics Designers</button>
+                            <button> Hire 2D Animators</button>
+                            <button>  Hire 3D Animators</button>
+                            <button> Hire Business Card Designers</button>
+                            <button> Hire Tattoo Designers</button>
+                            <button> Hire Stationery Designers </button>
+                            <button> Hire Packaging Designers </button>
+                            <button> Hire Fashion Designers</button>
+                            <button> Hire Brochure Designers</button>
+                            <button> Hire T-Shirt Designers </button>
+                            <button> Hire Other Graphic Designers</button>
+                        </div>
+                        <div id="wava">
+                            <button>  Hire 3D Modelers</button>
+                            <button> Hire 3D Renderers</button>
+                            <button> Hire Other 3D Graphic Designers</button>
+                        </div>
+                        <div id="lava">
+                            <button>   Hire Wordpress Web Designers </button>
+                            <button> Hire Squarespace Web Designers </button>
+                            <button> Hire Wix Web Designers</button>
+                            <button> Hire Shopify Web Designers</button>
+                            <button> Hire Magento Web Designers </button>
+                            <button> Hire Other Web Designers</button>
+                        </div>
+                        <div id="liva">
+                            <button>      Hire PHP Web Developers</button>
+                            <button> Hire HTML5 Web Developers</button>
+                            <button> Hire CSS Web Developers</button>
+                            <button> Hire Javascript Web Developers</button>
+                            <button> Hire Ruby on Rails Web Developers</button>
+                            <button> Hire node.js Web Developers</button>
+                            <button> Hire Angular.js Web Developers</button>
+                            <button> Hire React.js Web Developerss </button>
+                            <button> Hire Other Web Developers </button>
+                        </div>
+                        <div id="nova">
+                            <button> Hire iPhone Mobile App Developers </button>
+                            <button>Hire Android Mobile App Developers</button>
+                            <button> Hire PhoneGap Mobile App Developers</button>
+                            <button> Hire Flutter Mobile App Developers</button>
+                            <button> Hire Xamarin Mobile App Developers </button>
+                            <button> Hire Other Mobile App Developers</button>
+                        </div>
+                        <div id="rova">
+                            <button>   Hire Article Writers</button>
+                            <button>    Hire Copywriters</button>
+                            <button>  Hire Ghostwriters </button>
+                            <button>   Hire Other Writers</button>
+                        </div>
+                        <div id="mova">
+                            <button>  Hire Social Media Marketing Specialists</button>
+                            <button>  Hire Other Internet Marketing Specialists</button>   
+                        </div>
+                        <div id="lova">
+                            <button> Hire Java Software Developers </button>
+                            <button>Hire C++ Software Developers</button>
+                            <button> Hire Python Software Developers</button>
+                            <button> Hire Database Software Developers</button>
+                            <button> Hire Linux Software Developers</button>
+                            <button> Hire Objective C Software Developers</button>
+                            <button> Hire Other Software Developers</button>
+                        </div>
+                        <div id="isova">
+                            <button>Hire Spanish Translators</button>
+                            <button> Hire English Translators</button>
+                            <button> Hire Portuguese Translators</button>
+                            <button> Hire French Translators</button>
+                            <button> Hire German Translators</button>
+                            <button> Hire Other Translators</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="revel">
+                <span> Get ideas </span>
+                <div id="ngannou">
+                    <p>Get Web Design Ideas</p>
+                    <p> Get Mobile App Ideas</p>
+                    <p> Get Graphic Design Ideas</p>
+                    <p> Get Logo Design Ideas</p>
+                    <p> Get 3D Modelling Ideas</p>
+                    <p> Get Illustration Ideas </p>
+                    <p> Get Branding Ideas </p>
+                    <p> Get Product Design Ideas </p>
+                    <p> Get Package Design Ideas </p>
+                    <p> Get Wordpress Ideas </p>
+                    
+                </div>
+            </div>
+            <div id="revel">
+                <span> About </span>
+                <div id="ngannou">
+                    <p> Enterprise</p>
+                    <p> Membership</p>
+                    <p> Preferred Freelancer Program</p>
+                    <p> Get Verified</p>
+                </div>
+            </div>
+            <div id="revel">
+                <span> Resources </span>
+                <div id="ngannou">
+                    <p>   What Is Adobe Photoshop</p>
+                    <p>     What Is Android App Development</p>
+                    <p> What Is Article Writing</p>
+                    <p>  What Is Data Entry</p>
+                    <p> What Is Graphic Design</p>
+                    <p>  What is HTML</p>
+                    <p> What Is Internet Marketing</p>
+                    <p>  What Is iPhone App Development</p>
+                    <p>  What Is JavaScript</p>
+                    <p>  What Is Logo Design </p>
+                    <p>  What Is Mobile App Development</p>
+                    <p>  What Is PHP </p>
+                    <p>  What Is Python </p>
+                    <p> What Is Software Architecture </p>
+                    <p>  What Is Web Design</p>
+                    <p>  What Is WordPress   </p>           
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let buttonOne = document.getElementById('r1')
+        let divOne = document.getElementById('grape')
+        let divTwo = document.getElementById('maddo')
+        let divThree = document.getElementById('java')
+        let buttonTwo = document.getElementById('s1')
+        let buttonThree = document.getElementById('s2')
+        let divFour = document.getElementById('mava')
+        let buttonFour = document.getElementById('s3')
+        let divFive = document.getElementById('rava')
+        let buttonFive = document.getElementById('s4')
+        let divSix = document.getElementById('cava')
+        let buttonSix = document.getElementById('s5')
+        let divSeven = document.getElementById('nava')
+        let buttonSeven = document.getElementById('s6')
+        let buttonOn = document.getElementById('r2')
+        let divOn = document.getElementById('grope')
+       
+
+
+
+buttonOne.addEventListener('mouseenter', ()=>{
+    divOne.style.display = 'flex'
+     divOn.style.display = 'none'
+ 
+
+})
+
+buttonOn.addEventListener('mouseenter', ()=>{
+    divOne.style.display = 'none'
+    divOn.style.display = 'flex'
+})
+
+
+
+buttonTwo.addEventListener('mouseover', ()=>{
+  
+    divTwo.style.display = 'flex'
+    divThree.style.display = 'none'
+    divFour.style.display = 'none'
+    divFive.style.display = 'none'
+    divSix.style.display = 'none'
+    divSeven.style.display = 'none'
+    divOn.style.display = 'none'
+    divOne.style.display = 'flex'
+ 
+
+})
+
+
+divTwo.addEventListener('mouseleave', ()=>{
+    divOne.style.display = 'none'
+     divTwo.style.display = 'none'
+     divThree.style.display = 'none'
+     divFour.style.display = 'none'
+     divFive.style.display = 'none'
+     divSix.style.display = 'none'
+     divSeven.style.display = 'none'
+     divOn.style.display = 'none'
+    
+       
+    })
+
+    buttonThree.addEventListener('mouseover', ()=>{
+     
+    divThree.style.display = 'flex'
+    divFour.style.display = 'none'
+    divTwo.style.display = 'none'
+    divFive.style.display = 'none'
+    divSix.style.display = 'none'
+    divSeven.style.display = 'none'
+    divOn.style.display = 'none'
+    divOne.style.display = 'flex'
+ 
+
+})
+
+
+divThree.addEventListener('mouseleave', ()=>{
+    divOne.style.display = 'none'
+    divTwo.style.display = 'none'
+     divThree.style.display = 'none'
+     divFour.style.display = 'none'
+     divFive.style.display = 'none'
+     divSix.style.display = 'none'
+     divSeven.style.display = 'none'
+     divOn.style.display = 'none'
+    
+       
+    })
+
+    buttonFour.addEventListener('mouseover', ()=>{  
+    divFour.style.display = 'flex'
+    divTwo.style.display = 'none'
+    divThree.style.display = 'none'
+    divFive.style.display = 'none'
+    divSix.style.display = 'none'
+    divSeven.style.display = 'none'
+    divOn.style.display = 'none'
+    divOne.style.display = 'flex'
+ 
+
+})
+
+
+divFour.addEventListener('mouseleave', ()=>{
+    divOne.style.display = 'none'
+    divTwo.style.display ='none'
+     divThree.style.display = 'none'
+     divFour.style.display = 'none'
+     divFive.style.display = 'none'
+     divSix.style.display = 'none'
+     divSeven.style.display = 'none'
+     divOn.style.display = 'none'
+    
+       
+    })
+
+    buttonFive.addEventListener('mouseover', ()=>{
+    divFive.style.display = 'flex'
+    divTwo.style.display = 'none'
+    divThree.style.display = 'none'
+    divFour.style.display = 'none'
+    divSix.style.display = 'none'
+    divSeven.style.display = 'none'
+    divOn.style.display = 'none'
+    divOne.style.display = 'flex'
+     
+ 
+
+})
+
+
+divFive.addEventListener('mouseleave', ()=>{
+    divOne.style.display = 'none'
+    divTwo.style.display ='none'
+     divThree.style.display = 'none'
+     divFour.style.display = 'none'
+     divFive.style.display = 'none'
+     divSix.style.display = 'none'
+     divSeven.style.display = 'none'
+     divOn.style.display = 'none'
+    
+       
+    })
+
+    buttonSix.addEventListener('mouseover', ()=>{
+    divSix.style.display = 'flex'
+    divTwo.style.display = 'none'
+    divThree.style.display = 'none'
+    divFour.style.display = 'none'
+    divFive.style.display = 'none'
+    divSeven.style.display = 'none'
+    divOn.style.display = 'none'
+    divOne.style.display = 'flex'
+     
+ 
+
+})
+
+
+divSix.addEventListener('mouseleave', ()=>{
+    divOne.style.display = 'none'
+    divTwo.style.display ='none'
+     divThree.style.display = 'none'
+     divFour.style.display = 'none'
+     divFive.style.display = 'none'
+     divSix.style.display = 'none'
+     divSeven.style.display = 'none'
+     divOn.style.display = 'none'
+    
+       
+    })
+
+
+    buttonSeven.addEventListener('mouseover', ()=>{
+    divSeven.style.display = 'flex'
+    divTwo.style.display = 'none'
+    divThree.style.display = 'none'
+    divFour.style.display = 'none'
+    divFive.style.display = 'none'
+    divSix.style.display = 'none'
+    divOn.style.display = 'none'
+    divOne.style.display = 'flex'
+     
+ 
+
+})
+
+
+divSeven.addEventListener('mouseleave', ()=>{
+    divOne.style.display = 'none'
+    divTwo.style.display ='none'
+     divThree.style.display = 'none'
+     divFour.style.display = 'none'
+     divFive.style.display = 'none'
+     divSix.style.display = 'none'
+     divSeven.style.display = 'none'
+     divOn.style.display = 'none'
+    
+       
+    })
+
+    let buttonOn1 = document.getElementById('r3')
+        let divOn1 = document.getElementById('gapa')
+        let buttonOn2 = document.getElementById('r4')
+        let divOn2 = document.getElementById('hapa')
+        let buttonOn3 = document.getElementById('g1')
+        let divOn3 = document.getElementById('mara')
+        let buttonOn4 = document.getElementById('g2')
+        let divOn4 = document.getElementById('wava')
+        let buttonOn5 = document.getElementById('g3')
+        let divOn5 = document.getElementById('lava')
+        let buttonOn6 = document.getElementById('g4')
+        let divOn6 = document.getElementById('liva')
+        let buttonOn7 = document.getElementById('g5')
+        let divOn7 = document.getElementById('nova')
+        let buttonOn8 = document.getElementById('g6')
+        let divOn8 = document.getElementById('rova')
+        let buttonOn9 = document.getElementById('g7')
+        let divOn9 = document.getElementById('mova')
+        let buttonOn10 = document.getElementById('g8')
+        let divOn10 = document.getElementById('lova')
+        let buttonOn11 = document.getElementById('g9')
+        let divOn11 = document.getElementById('isova')
+
+
+buttonOn1.addEventListener('mouseenter', ()=>{
+    divOn1.style.display = 'flex'
+    divOn2.style.display = 'none'
+   
+ 
+
+ 
+
+})
+
+buttonOn2.addEventListener('mouseenter', ()=>{
+    divOn1.style.display = 'none'
+    divOn2.style.display = 'flex'
+  
+})
+
+document.body.addEventListener('mouseenter', ()=>{
+     divOne.style.display = 'none'
+     divTwo.style.display = 'none'
+     divThree.style.display = 'none'
+     divFour.style.display = 'none'
+     divFive.style.display = 'none'
+     divSix.style.display = 'none'
+     divSeven.style.display = 'none'
+      divOn.style.display = 'none'
+    divOn1.style.display = 'none'
+    divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+
+    
+       
+    })
+
+
+    buttonOn3.addEventListener('mouseover', ()=>{
+     
+     divOn3.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     divOn1.style.display = 'flex'
+  
+ 
+ })
+ 
+ 
+ divOn3.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     
+        
+     })
+
+     buttonOn4.addEventListener('mouseover', ()=>{
+     
+     divOn4.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     divOn1.style.display = 'flex'
+  
+ 
+ })
+ 
+ 
+ divOn4.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     
+        
+     })
+
+     buttonOn5.addEventListener('mouseover', ()=>{
+     
+     divOn5.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     divOn1.style.display = 'flex'
+    
+  
+ 
+ })
+ 
+ 
+ divOn5.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     
+        
+     })
+
+
+
+     buttonOn6.addEventListener('mouseover', ()=>{
+     
+     divOn6.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     divOn1.style.display = 'flex'
+  
+ 
+ })
+ 
+ 
+ divOn6.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     
+        
+     })
+     buttonOn7.addEventListener('mouseover', ()=>{
+     
+     divOn7.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     divOn1.style.display = 'flex'
+  
+ 
+ })
+ 
+ 
+ divOn7.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+    
+     })
+
+     buttonOn8.addEventListener('mouseover', ()=>{
+     
+     divOn8.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     divOn1.style.display = 'flex'
+  
+ 
+ })
+ 
+ 
+ divOn8.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+    
+     })
+
+     buttonOn9.addEventListener('mouseover', ()=>{
+     
+     divOn9.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+     divOn1.style.display = 'flex'
+  
+ 
+ })
+ 
+ 
+ divOn9.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+    
+     })
+
+     buttonOn10.addEventListener('mouseover', ()=>{
+     
+     divOn10.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn11.style.display = 'none'
+     divOn1.style.display = 'flex'
+  
+ 
+ })
+ 
+ 
+ divOn10.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+    
+     })
+
+     buttonOn11.addEventListener('mouseover', ()=>{
+     
+     divOn11.style.display = 'flex'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn1.style.display = 'flex'
+  
+ 
+ })
+ 
+ 
+ divOn11.addEventListener('mouseleave', ()=>{
+    divOn1.style.display = 'none'
+     divOn2.style.display = 'none'
+     divOn3.style.display = 'none'
+     divOn4.style.display = 'none'
+     divOn5.style.display = 'none'
+     divOn6.style.display = 'none'
+     divOn7.style.display = 'none'
+     divOn8.style.display = 'none'
+     divOn9.style.display = 'none'
+     divOn10.style.display = 'none'
+     divOn11.style.display = 'none'
+    
+     })
+    </script>
+</body>
+</html>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="query.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Epilogue:wght@800&family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&family=Open+Sans:wght@500;600&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;600&display=swap');
+    
+    *{
+            margin: 0;
+            padding: 0;
+    }
+    .top{
+        width: 100%;
+        height: 100vh;         
+    }
+    .top video{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;   
+    }
+    .blac{
+        width: 100%;
+        height: 7vh;
+        background-color: rgb(18,21,27);
+        position: absolute;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        z-index: 1;
+        position: absolute;
+        /* display: flex;
+        justify-content: space-evenly;
+        align-items: center; */
+    }
+    #sew{
+    position: relative;
+    width: 100%;
+    height: 100vh;  
+    }
+    #ll{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    }   
+    .juj{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin: 200px 0px 0px 40px;
+    }
+    .juj h1{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: 400; */
+    }
+    .juj p{
+        line-height: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .ben button{
+        width: 200px;
+        padding: 14px 7px;
+        background-color: #e60278;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        border: 0;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+    .burt{
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .kk{
+        width: fit-content;
+        /* padding: 10px; */
+        /* height: 7vh; */
+        background: none;
+        color: white;
+        border: 0;
+        position: relative;
+    }
+    .kk:hover{
+        background-color: rgba(255, 255, 255, 0.13);
+    }
+    .content{
+        width: fit-content;
+        background-color: white;
+        color: black;
+        display: none;
+        /* line-height: 90px; */
+        /* padding:  15px 20px; */
+        border-radius: 6px;
+        position: absolute;
+        /* text-align: center; */
+    }
+    .content ul{
+        /* border: solid; */
+        list-style-type: none;
+    }
+    .content ul li{
+        margin: 0;
+    }
+    .content ul li button{
+        position: relative;
+    }
+    .content ul li > div{
+        position: absolute;
+        border: none;
+        left: 120px;
+        top: 0px;
+        background-color: white;
+        color: black;
+    }
+    .content button:hover{
+        color:  rgba(0, 132, 255, 0.973);
+    }
+    .uu:hover .content{
+        display: block;
+    }
+     .content button{
+        background: none;
+        border: 0;
+        margin-top: 5px;
+     }
+     .uu a{
+        text-decoration: none;
+        color: black;
+        margin-top: 10px;
+     }
+     .uu a:hover{
+        color:  rgba(0, 132, 255, 0.973);
+     }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="naval">
+         <div class="navbar">
+             <img src="freelancer-logo.svg" alt="">
+             <a href="">How it Works</a>
+             <a href="">Browse Jobs</a>
+         </div>
+     
+         <div class="navy">
+             <a href="login.html">Log In</a>
+             <a href="signup.html">Sign Up</a>
+             <a href=""><button><b>Post a Project</b></button></a>
+         </div>
+        </div>
+         </div>
+
+
+    <div class="top">
+        <div class="blac">
+           <div class="burt">
+            <div class="uu">
+                <button class="kk">Find Jobs</button>
+                <div class="content">
+                    <ul>
+                        <li><button>By skills</button><div class="dropdown">
+                            <ol>
+                                <li>first</li>
+                                <li>second</li>
+                                <li>third</li>
+                            </ol>
+                        </div></li>
+                        <li>By Language</li>
+                        <li>Featured Jobs</li>
+                        <li>Find Contests</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="uu">
+                <button class="kk">Hire freelancers</button>
+                <div class="content">
+                    <button>By skill</button> <br> 
+                    <button>By Location</button> <br>
+                    <button>Skill categories</button> <br>
+                    
+                  
+                </div>
+            </div>
+
+            <div class="uu">
+                <button class="kk">Get ideas</button>
+                <div class="content">
+                <button>Get Web Design Ideas</button> <br>
+                <button>Get Mobile App Ideas</button> <br>
+                <button>Get Graphic Design Ideas</button> <br>
+                <button>Get Logo Design Ideas</button> <br>
+                <button>Get 3D Modelling Ideas</button> <br>
+                <button>Get Illustration Ideas</button> <br>
+                <button>Get Branding Ideas</button> <br>
+                <button>Get Product Design Ideas</button> <br>
+                <button>Get Package Design Ideas</button> <br>
+                <button>Get Wordpress Ideas</button> 
+                  
+                </div>
+            </div>
+
+            <div class="uu">
+                <button class="kk">About</button>
+                <div class="content">
+               <button>Enterprise</button> <br>
+                <button>Membership</button> <br>
+                <button>Preferred Freelancer Program</button> <br>
+                <button>Get Verified</button>  
+                </div>
+            </div>
+
+            <div class="uu">
+                <button class="kk">Resources</button>
+                <div class="content">
+                    <a href="">What Is Adobe Photoshop</a> <br>
+                    <a href="">What Is Android App Development</a> <br>
+                    <a href="">What Is Article Writing</a> <br>
+                    <a href="">What Is Data Entry</a> <br>
+                    <a href="">What Is Graphic Design</a> <br>
+                    <a href="">What is HTML</a> <br>
+                    <a href="">What Is Internet Marketing</a> <br>
+                    <a href="">What Is iPhone App Development</a> <br>
+                    <a href="">What Is JavaScript</a> <br>
+                    <a href="">What Is Logo Design</a> <br>
+                    <a href="">What Is Mobile App Development</a> <br>
+                    <a href="">What Is PHP</a> <br>
+                    <a href="">What Is Python</a> <br>
+                    <a href="">What Is Software Architecture</a> <br>
+                    <a href="">What Is Web Design</a> <br>
+                    <a href="">What Is WordPress</a> 
+                </div>
+            </div>
+           </div>
+        </div>
+       
+         
+        <div id="sew">
+            <video  id="ll" autoplay loop muted>
+                <source src="mobile-phone-v3.mp4">
+            </video>
+            <div class="juj">
+                <h1><b>Hire the best <br> freelancers for any job, <br> online.</b></h1>
+                <p><iconify-icon icon="prime:circle-fill" style="color: white;" width="12"></iconify-icon> &nbsp; World's largest freelance marketplace</p>
+                <p><iconify-icon icon="prime:circle-fill" style="color: white;" width="12"></iconify-icon> &nbsp; Any job you can possibly think of</p>
+                <p><iconify-icon icon="prime:circle-fill" style="color: white;" width="12"></iconify-icon> &nbsp; Save up to 90% & get quotes for free</p>
+                <p><iconify-icon icon="prime:circle-fill" style="color: white;" width="12"></iconify-icon> &nbsp; Pay only when you're 100% happy</p>
+            
+                <div class="ben">
+                    <button>Hire Freelancer</button>
+                    <button>Earn Money Freelancing</button>
+                </div>
+            
+            </div>
+
+
+            
+
+            </div>
+     
+     </div>
+    
+     </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

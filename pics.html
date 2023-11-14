@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Epilogue:wght@800&family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&family=Open+Sans:wght@500;600&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .all{
+            width: 100%;
+            height: 200vh;
+            background-color: black;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            /* background-color: aqua; */
+        }
+        .nav {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            position: fixed;
+        }
+
+        .st {
+            /* position: relative; */
+        }
+
+        .image {
+            width: 150px;
+        }
+
+        .element {
+            display: flex;
+            align-items: center;
+            width: 400px;
+            justify-content: space-around;
+        }
+
+        .element1 {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            justify-content: space-around;
+        }
+
+        .bot {
+            height: 35px;
+            width: 120px;
+            background-color: #e60278;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        .nav1 {
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            /* margin-top: 80px; */
+            position: relative;
+            /* bottom: -60px; */
+        }
+
+        .element2 {
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+            font-size: 18px;
+            margin-left: 230px;
+        }
+
+        .parent {
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            display: none;
+            width: 130px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px;
+            border: 1px solid beige;
+        }
+
+        .parent:hover .content {
+            display: block;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            width: 130px;
+            justify-content: space-between;
+        }
+
+        .all {
+            display: flex;
+            width: 480px;
+            justify-content: space-between;
+            /* padding: 10px; */
+        }
+
+        .parent1 {
+            position: relative;
+        }
+
+        .content1 {
+            position: absolute;
+            display: none;
+            width: 500px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            /* line-height: 30px; */
+            padding: 10px;
+            border: 1px solid beige;
+            margin-left: -11px;
+            margin-top: -41px;
+        }
+
+        .parent1:hover .content1 {
+            display: block;
+        }
+
+        .line {
+            height: 320px;
+            width: 2px;
+            background-color: beige;
+            margin-top: 8px;
+        }
+
+        .deep {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            justify-content: space-between;
+        }
+
+        .parent2 {
+            position: relative;
+        }
+
+        .content2 {
+            position: absolute;
+            display: none;
+            width: 500px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            /* line-height: 30px; */
+            padding: 10px;
+            border: 1px solid beige;
+            margin-left: -11px;
+            margin-top: -72px;
+        }
+
+        .line1 {
+            height: 170px;
+            width: 2px;
+            background-color: beige;
+            margin-top: 8px;
+        }
+
+        .parent2:hover .content2 {
+            display: block;
+        }
+
+        .parent3 {
+            position: relative;
+        }
+
+        .content3 {
+            position: absolute;
+            display: none;
+            width: 710px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            /* line-height: 30px; */
+            padding: 10px;
+            border: 1px solid beige;
+            margin-left: -198px;
+            margin-top: -41px;
+        }
+
+        .parent3:hover .content3 {
+            display: block;
+        }
+
+        .deep2 {
+            display: flex;
+            width: 800px;
+            justify-content: space-around;
+        }
+
+        .parent4 {
+            position: relative;
+        }
+
+        .content4 {
+            position: absolute;
+            display: none;
+            width: 720px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            /* line-height: 30px; */
+            padding: 10px;
+            border: 1px solid beige;
+            margin-left: -218px;
+            margin-top: -41px;
+        }
+
+        .parent4:hover .content4 {
+            display: block;
+        }
+
+        .all1 {
+            display: flex;
+            justify-content: space-between;
+            /* padding: 10px; */
+        }
+
+        .line2 {
+            height: 500px;
+            width: 2px;
+            background-color: beige;
+            margin-top: 8px;
+        }
+
+        .line3 {
+            height: 350px;
+            width: 2px;
+            background-color: beige;
+            margin-top: 8px;
+        }
+
+        .parent5 {
+            position: relative;
+        }
+
+        .content5 {
+            position: absolute;
+            display: none;
+            width: 210px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            line-height: 26px;
+            padding: 10px;
+            border: 1px solid beige;
+            /* margin-left: -218px;
+            margin-top: -41px; */
+        }
+
+        .parent5:hover .content5 {
+            display: block;
+        }
+
+        .blue:hover {
+            color: blue;
+        }
+
+        .page {
+            width: 100%;
+            /* height: 100vh; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -330px;
+            color: white;
+        }
+
+        .video {
+            width: 100%;
+            height: 115vh;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .dew {
+            display: flex;
+            align-items: center;
+        }
+
+        .fam {
+            font-size: 23px;
+            margin-top: 20px;
+        }
+
+        .mmm {
+            font-size: 32px;
+            margin-top: 120px;
+        }
+
+        .bot1 {
+            height: 60px;
+            width: 220px;
+            color: white;
+            background-color: #e60278;
+            margin-top: 20px;
+            font-size: 20px;
+            border: none;
+        }
+
+        .bot1:hover {
+            background-color: #ac477b;
+        }
+
+        .bot2 {
+            height: 60px;
+            width: 280px;
+            color: white;
+            background-color: #8c8a93;
+            margin-left: 15px;
+            margin-top: 20px;
+            font-size: 20px;
+            border: none;
+        }
+
+        .bot2:hover {
+            background-color: #bfb5e4;
+        }
+
+        .sets {
+            width: 100%;
+            background-color: #12151b;
+        }
+
+        .set {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            gap: 40px;
+            font-size: 20px;
+            color: white;
+            margin-top: 160px;
+            width: 1500px;
+        }
+
+        .set1 {
+            width: 60px;
+        }
+
+        .set2 {
+            height: 1px;
+            width: 1180px;
+            background-color: #8c8a93;
+            margin-left: 200px;
+        }
+
+        .middle {
+            margin-left: 200px;
+            margin-top: 150px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .middle1 {
+            display: flex;
+            font-size: 20px;
+            gap: 40px;
+            margin-top: 80px;
+        }
+
+        .middle2 {
+            line-height: 30px;
+        }
+
+        .meta {
+            font-size: 32px;
+            color: white;
+            margin-top: 80px;
+            margin-left: 200px;
+        }
+
+        .meta1 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .medd {
+            display: flex;
+            align-items: center;
+            margin-left: 90px;
+            margin-top: 50px;
+            gap: 5px;
+        }
+
+        .meddle {
+            width: 700px;
+        }
+
+        .meddles {
+            width: 750px;
+        }
+
+        .par {
+            position: relative;
+        }
+
+        .cont {
+            width: 750px;
+            background-color: white;
+            color: black;
+            display: none;
+            top: -30px;
+            bottom: -60px;
+            left: -20px;
+            /* transition: all 0.1s ease-in-out; */
+            position: absolute;
+        }
+
+        .par:hover .cont {
+            display: block;
+            position: absolute;
+        }
+
+        .hire {
+            display: flex;
+            align-items: center;
+            width: 720px;
+            justify-content: space-between;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .botbot {
+            height: 35px;
+            width: 150px;
+            background-color: #e60278;
+            color: white;
+            display: flex;
+            align-items: center;
+            border: none;
+            justify-content: center;
+        }
+
+        .meddio1 {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .meddle1 {
+            width: 350px;
+        }
+
+        .meddle1s {
+            width: 400px;
+        }
+
+        .hire1 {
+            display: flex;
+            align-items: center;
+            width: 380px;
+            justify-content: space-between;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .pair {
+            position: relative;
+        }
+
+        .conte {
+            width: 400px;
+            background-color: white;
+            color: black;
+            display: none;
+            top: -30px;
+            bottom: -60px;
+            left: -20px;
+            /* transition: all 0.1s ease-in-out; */
+            position: absolute;
+        }
+
+        .pair:hover .conte {
+            display: block;
+            /* transition: all 5s ease-in-out; */
+            /* z-index: -100px; */
+        }
+
+        .meddio {
+            display: flex;
+            align-items: center;
+            margin-left: 90px;
+            /* margin-top: 10px; */
+            gap: 5px;
+        }
+
+        .wee {
+            color: hotpink;
+            margin-left: 700px;
+            display: flex;
+            align-items: center;
+        }
+
+        .wee:hover {
+            text-decoration: underline;
+        }
+
+        .weef {
+            color: white;
+            display: flex;
+            width: 1550px;
+            gap: 50px;
+            font-size: 20px;
+            justify-content: center;
+        }
+
+        .weef1 {
+            font-size: 30px;
+        }
+
+        .weef2 {
+            color: hotpink;
+        }
+
+        .weef3 {
+            line-height: 50px;
+        }
+
+        .weef4 {
+            color: hotpink;
+            display: flex;
+            align-items: center;
+        }
+
+        .weef4:hover {
+            text-decoration: underline;
+        }
+
+        .wayve:hover {
+            color: #8c8cff;
+            text-decoration: underline;
+        }
+
+        .mean {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            gap: 10px;
+            width: 1550px;
+
+        }
+
+        .mean1 {
+            width: 120px;
+            height: 30px;
+        }
+
+        .dove {
+            background-image: url(bird);
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dove1 {
+            color: white;
+            font-size: 30px;
+            margin-left: 400px;
+        }
+
+        .dove2 {
+            color: white;
+            font-size: 18px;
+            margin-left: 400px;
+            line-height: 30px;
+        }
+
+        .dove3 {
+            color: white;
+            font-size: 18px;
+            margin-left: 400px;
+            line-height: 30px;
+        }
+
+        .dove4 {
+            color: #e60278;
+        }
+
+        .dove5 {
+            display: flex;
+            align-items: center;
+        }
+
+        .dove5:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+     
+    
+
+    </style>
+</head>
+<body>
+   <div class="all">
+
+       <section>
+  
+       
+        
+        <div class="medd">
+            <div class="par">
+                <img class="meddle" src="first" alt="">
+                <div class="cont">
+                    <img class="meddles" src="first" alt="">
+                    <div class="hire">
+                        <div>
+                            <p>AI generated art.</p>
+                            <p>$200 USD in 7days.</p>
+                        </div>
+                        <button class="botbot">Discover more <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                height="20" viewBox="0 0 24 24">
+                                <g transform="rotate(90 12 12)">
+                                    <g id="feArrowUp0" fill="none" fill-rule="evenodd" stroke="none"
+                                        stroke-width="1">
+                                        <g id="feArrowUp1" fill="white">
+                                            <path id="feArrowUp2" d="m4 15l8-8l8 8l-2 2l-6-6l-6 6z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="meddio1">
+                    <div class="pair">
+                        <img class="meddle1" src="second" alt="">
+                        <div class="conte">
+                            <img class="meddle1s" src="second" alt="">
+                            <div class="hire1">
+                                <div>
+                                    <p>Wordpress Website</p>
+                                    <p>$125 USD in 1days.</p>
+                                </div>
+                                <button class="botbot">Discover more <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="0 0 24 24">
+                                        <g transform="rotate(90 12 12)">
+                                            <g id="feArrowUp0" fill="none" fill-rule="evenodd" stroke="none"
+                                                stroke-width="1">
+                                                <g id="feArrowUp1" fill="white">
+                                                    <path id="feArrowUp2" d="m4 15l8-8l8 8l-2 2l-6-6l-6 6z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pair">
+                        <img class="meddle1" src="third" alt="">
+                        <div class="conte">
+                            <img class="meddle1s" src="third" alt="">
+                            <div class="hire1">
+                                <div>
+                                    <p>Interior 3D model</p>
+                                    <p>$350 USD in 7days.</p>
+                                </div>
+                                <button class="botbot">Discover more <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="0 0 24 24">
+                                        <g transform="rotate(90 12 12)">
+                                            <g id="feArrowUp0" fill="none" fill-rule="evenodd" stroke="none"
+                                                stroke-width="1">
+                                                <g id="feArrowUp1" fill="white">
+                                                    <path id="feArrowUp2" d="m4 15l8-8l8 8l-2 2l-6-6l-6 6z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meddio1">
+                    <div class="pair">
+                        <img class="meddle1" src="fourth" alt="">
+                        <div class="conte">
+                            <img class="meddle1s" src="fourth" alt="">
+                            <div class="hire1">
+                                <div>
+                                    <p>Packagig Design</p>
+                                    <p>$2500 USD in 30days.</p>
+                                </div>
+                                <button class="botbot">Discover more <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="0 0 24 24">
+                                        <g transform="rotate(90 12 12)">
+                                            <g id="feArrowUp0" fill="none" fill-rule="evenodd" stroke="none"
+                                                stroke-width="1">
+                                                <g id="feArrowUp1" fill="white">
+                                                    <path id="feArrowUp2" d="m4 15l8-8l8 8l-2 2l-6-6l-6 6z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pair">
+                        <img class="meddle1" src="fifth" alt="">
+                        <div class="conte">
+                            <img class="meddle1s" src="fifth" alt="">
+                            <div class="hire1">
+                                <div>
+                                    <p>Mobile App</p>
+                                    <p>$21000 USD in 60days.</p>
+                                </div>
+                                <button class="botbot">Discover more <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="0 0 24 24">
+                                        <g transform="rotate(90 12 12)">
+                                            <g id="feArrowUp0" fill="none" fill-rule="evenodd" stroke="none"
+                                                stroke-width="1">
+                                                <g id="feArrowUp1" fill="white">
+                                                    <path id="feArrowUp2" d="m4 15l8-8l8 8l-2 2l-6-6l-6 6z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+       </section>
+
+
+    </div>
+
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
